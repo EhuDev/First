@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:poppins;
+}
+body{
+  background-image: url('./images/bgp.jpg');
+  font:15px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+main{
+  width: 100vw;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+
+/* Global */
+.container{
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+ul{
+margin: 0;
+padding: 0;
+
+}
+
+.button_1{
+height: 40px;
+width: 20px;
+background: #e8491d;
+border: none;
+color: #fff;
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+cursor: pointer;
+}
+
+.dark{
+background: #35424a;
+color: #fff;
+border-radius: 10px;
+padding: 10px;
+margin: 60px 10px;
+width: 300px;
+position: relative;
+
+  }
+.dark img{
+  border-radius: 50%;
+  width: 80px;
+  height:80px;
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #BAD7E9;
+}
+
+
+
+.page-title{
+color: #fff;
+}
+
+/* Header */
+header{
+background: #35424a;
+color: #ffffff;
+padding-top: 15px;
+min-height: 55px;
+border-bottom: #e8491d 3px solid;
+
+
+}
+header a{
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+}
+
+header li{
+float: left;
+display: inline;
+padding: 0 20px 0 20px;
+}
+header .branding{
+float: left;
+
+}
+header .branding h1{
+margin: 0;
+}
+header nav{
+float: right;
+margin-top: 10px;
+}
+header .highlight, header .current a{
+color: #e8491d;
+font-weight: bold;
+}
+
+ a:hover{
+  color: #cccccc;
+  font-weight: bold;
+ }
+
+/* Showcase */
+
+.showcase{
+min-height: 400px;
+background: url('./images/saw.jpg') no-repeat center 0;
+text-align: center;
+color: #fff;
+
+
+}
+.showcase h1{
+margin-top: 100px;
+font-size: 50px;
+margin-bottom: 10px;
+font-weight: bold;
+
+}
+.showcase p{
+font-size: 20px;
+}
+/* Newsletter */
+.newsletter{
+padding-bottom:  15px;
+color: #fff;
+background: #35424a;
+
+
+}
+.newsletter form{
+float: right;  
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 1px;
+width: 50%;;
+padding-top: 10px;
+
+  }
+
+ .newsletter input{
+  border: none;
+  outline: none;
+  height: 40px;
+
+  border-radius: 8px;
+ }
+.newsletter h1{
+  margin: 12px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+
+/* Boxes */
+
+.boxes{
+margin-top: 20px;
+color: #fff;
+
+}
+section .box{
+float: left;
+text-align: center;
+width: 30%;
+padding: 10px;
+}
+
+section .box i{
+width: 30%;
+aspect-ratio: 3/2;
+object-fit: contain;
+font-size: 70px;
+}
+.fa-css3-alt{
+  color: #2091EB;
+}
+.fa-html5{
+  color: #D84924;
+}
+.fa-react{
+  color: #00CDF2;
+}
+
+/* Sidebar */
+
+.sidebar{
+float: right;
+width: 400px;
+
+
+}
+
+aside .quote input, aside .quote textarea{
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* Main-col */
+
+.main-col{
+float: left;
+width: 60%;
+color: #fff;
+margin-top: 30px;
+}
+.main-col2{
+float: left;
+width: 60%;
+margin-top: 10px;
+}
+
+/* Services */
+
+.services li{
+list-style: none;
+padding: 20px;
+border: #cccccc solid 1px;
+margin-top:  10px;
+background: #e6e6e6;
+border-radius: 8px;
+}
+
+
+footer	{
+padding: 20px;
+margin-top: 20px;
+color: #fff;
+background-color: #e8491d;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.social-media{
+  margin-left: 20px ;
+  font-size: 20px;
+ 
+  
+}
+.fa-facebook{
+color: #0C88EF;
+
+}
+.fa-github{
+color: #fff;
+
+}
+.fa-youtube{
+color:#FF0000;
+
+}
+.fa-instagram{
+color: #FF0169;
+
+}
+/* Media queries */
+@media(max-width: 768px){
+.branding,
+nav,
+nav li,
+h1,
+.newsletter ,
+.boxes .box,
+.main-col,
+.main-col2,
+.sidebar
+
+{
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+.dark h3{
+  margin-top: 30px;
+ 
+}
+.newsletter form{
+  display: inline;
+  float: none;
+}
+
+}
+header{
+  padding-bottom: 20px;
+}
+
+.showcase h1{
+  margin-top: 40px;
+}
+.newsletter button, .quote button{
+  display: block;
+  width: 100%;
+}
+
+.newsletter form input[type="email"]{
+  margin: 5px;
+  display: block;
+  width: 97%;
+}
+
+
+
+
+
